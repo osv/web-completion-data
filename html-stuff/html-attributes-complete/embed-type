@@ -45,10 +45,12 @@ application/x-stuffit StuffIt archive files
 application/x-tar Tarball files
 application/x-www-form-urlencoded Form Encoded Data; Documented in HTML 4.01 Specification, Section 17.13.4.1
 application/x-xpinstall Add-ons to Mozilla applications (Firefox, Thunderbird, SeaMonkey, and the discontinued Sunbird)
+application/x-yaml
 application/xhtml+xml XHTML; Defined by RFC 3236
 application/xml XML files; Defined by RFC 3023
 application/xml-dtd DTD files; Defined by RFC 3023
 application/xop+xml XOP
+application/yaml
 application/zip ZIP archive files; Registered
 audio/L24 24bit Linear PCM audio at 8–48 kHz, 1-N channels; Defined in RFC 3190
 audio/basic μ-law audio at 8 kHz, 1 channel; Defined in RFC 2046
@@ -81,6 +83,7 @@ model/x3d+binary X3D ISO standard for representing 3D computer graphics, X3DB bi
 model/x3d+fastinfoset X3D ISO standard for representing 3D computer graphics, X3DB binary files (application in process, this replaces any use of model/x3d+binary)
 model/x3d+xml X3D ISO standard for representing 3D computer graphics, X3D XML files
 model/x3d-vrml X3D ISO standard for representing 3D computer graphics, X3DV VRML files (application in process, previous uses may have been model/x3d+vrml)
+module ECMAScript 6 module desclare. Usually <script type="module">
 multipart/alternative MIME Email; Defined in RFC 2045 and RFC 2046
 multipart/encrypted Defined in RFC 1847
 multipart/form-data MIME Webform; Defined in RFC 2388
@@ -99,7 +102,9 @@ text/vnd.abc ABC music notation; Registered
 text/x-gwt-rpc GoogleWebToolkit data
 text/x-jquery-tmpl jQuery template data
 text/x-markdown Markdown formatted text
+text/x-yaml
 text/xml Extensible Markup Language; Defined in RFC 3023
+text/yaml
 video/avi Covers most Windows-compatible formats including .avi and .divx
 video/mp4 MP4 video; Defined in RFC 4337
 video/mpeg MPEG-1 video with multiplexed audio; Defined in RFC 2045 and RFC 2046
