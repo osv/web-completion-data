@@ -26,17 +26,48 @@ function mergeYamls(yamls) {
 
   _.each(yamls, function processOneYaml(yaml) {
     var data = yaml.data;
+
+    if (!data) {
+      error('yaml is empty! Read readme how you can use it script');
+      process.exit(1);
+    }
+    
     var attributes = data.attributes;
     var tags = data.tags;
 
+    if (!tags || !attributes) {
+      warning('Yaml file have nor "attributes" nor "tags" properties');
+    }
+    
     if (attributes) {
       if (!_.isArray(attributes)) {
         error('"attributes" should be array');
         process.exit(1);
       }
     }
+
+    if (!_.isObject(tags) || _.isArray(tags)) {
+      error('"tags" should be hash, bug got:');
+      console.log(colors.red(JSON.stringify(tags, null, 2)));
+      process.exit(1);
+    }
+
+    _.each(tags, processTagProps);
     
-    _.each(attributes, function processAttributesProps(attribute, i) {
+    _.each(attributes, processAttributesProps);
+    
+    // funcs
+
+    function processTagProps(doc, tagName) {
+      if (resTags[tagName]) {
+        warning('Duplicate documentation for tag "' + colors.magenta(tagName) + '", overriding doc! Maybe you should place doc in one place?');
+        console.log('Old documentation: ' + colors.red(resTags[tagName]));
+        console.log('New documentation: ' + colors.green(doc));
+      }
+      resTags[tagName] = doc || '';
+    }
+    
+    function processAttributesProps(attribute, i) {
 
       attrShoutBeObject(attribute);
       attrShouldHaveOneKey(attribute);
@@ -58,7 +89,7 @@ function mergeYamls(yamls) {
       
       function attrShouldHaveOneKey(attribute) {
         var keys = _.keys(attribute);
-         if (keys.length > 1) {
+        if (keys.length > 1) {
           errorAttr('keys should be only 1, but got:');
           console.log(keys);
           process.exit(1);
@@ -68,17 +99,8 @@ function mergeYamls(yamls) {
       function errorAttr(msg) {
         error('attribute[' + i +'] ' + msg);
       }
-    }); // each processAttributesProps
+    } // each processAttributesProps
 
-    _.each(tags, function processTagProps(doc, tagName) {
-      if (resTags[tagName]) {
-        warning('Duplicate documentation for tag "' + colors.magenta(tagName) + '", overriding doc! Maybe you should place doc in one place?');
-        console.log('Old documentation: ' + colors.red(resTags[tagName]));
-        console.log('New documentation: ' + colors.green(doc));
-      }
-      resTags[tagName] = doc;
-    });
-    
     // check for 'd' property and add into resAttributes
     function addAttributeIfHaveDoc(attributeName, properties) {
       var tagNames = getTagNames(properties),
