@@ -109,12 +109,15 @@ function mergeYamls(yamls) {
       if (doc) {
         _.each(tagNames, function addTagAttrDocMaybe(tagName) {
           var key = tagName + '-' + attributeName;
-          if (resAttributes[key]) {
-            warning('Duplicate documentation for tag\'s attribute "' + colors.magenta(key) + '", overriding doc! Maybe you should place doc in one place?');
-            console.log('Old documentation: ' + colors.red(resAttributes[key]));
-            console.log('New documentation: ' + colors.green(resAttributes[key]));
+          if (!resAttributes[tagName]) {
+            resAttributes[tagName] = {};
           }
-          resAttributes[key] = doc;            
+          if (resAttributes[tagName][attributeName]) {
+            warning('Duplicate documentation for tag\'s attribute "' + colors.magenta(key) + '", overriding doc! Maybe you should place doc in one place?');
+            console.log('Old documentation: ' + colors.red(resAttributes[tagName][attributeName]));
+            console.log('New documentation: ' + colors.green(doc));
+          }
+          resAttributes[tagName][attributeName] = doc;            
         });
       }
     }

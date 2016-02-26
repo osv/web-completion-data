@@ -49,9 +49,9 @@ function createStuffFiles(data, dir) {
   var tagDocDir = path.join(dir, DIR_TAGS_DOC);
   
   mkdirp.sync(dir);
-  mkdirp.sync(tagDocDir);
-  
+ 
   if (! _.isEmpty(tags)) {
+    mkdirp.sync(tagDocDir);
     var tagsData = _
           .keys(tags)
           .sort()
@@ -72,6 +72,20 @@ function createStuffFiles(data, dir) {
       }
     });
 
+    console.log('');
+  }
+
+  if (!_.isEmpty(attributes)) {
+    var attributesDir = path.join(dir, DIR_ATTRIBUTES),
+        attributesDirDoc = path.join(dir, DIR_ATTRIBUTES_LARGE_DOC),
+        attributeValuesDir = path.join(dir, DIR_ATTRIBUTES_VALUES);
+    console.log(attributes);
+
+    mkdirp.sync(attributesDir);
+    mkdirp.sync(attributesDirDoc);
+    mkdirp.sync(attributeValuesDir);
+
+    // _.each(attributes, '');
     console.log('');
 
   }
