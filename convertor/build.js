@@ -45,7 +45,7 @@ function loadYAML(file) {
 // create html stuff. They are sorted ABC
 function createStuffFiles(data, dir) {
   var tags = data.tags,
-      attributesData = data.attributes;
+      tagAttributes = data.attributes;
 
   var tagFile = path.join(dir, FILE_TAG_LIST);
   var tagDocDir = path.join(dir, DIR_TAGS_DOC);
@@ -78,7 +78,7 @@ function createStuffFiles(data, dir) {
     console.log('');
   }
 
-  if (!_.isEmpty(attributesData)) {
+  if (!_.isEmpty(tagAttributes)) {
     var attributesDir = path.join(dir, DIR_ATTRIBUTES),
         attributesDirDoc = path.join(dir, DIR_ATTRIBUTES_LARGE_DOC),
         attributeValuesDir = path.join(dir, DIR_ATTRIBUTES_VALUES);
@@ -88,7 +88,7 @@ function createStuffFiles(data, dir) {
     mkdirp.sync(attributeValuesDir);
 
     // build attribute list for html tags
-    _.each(attributesData, function createAttribute(tagAttributes, tagName) {
+    _.each(tagAttributes, function createAttribute(tagAttributes, tagName) {
       var tagAttributesList = [];
 
       _.each(tagAttributes, function processEachAttribute(doc, attributeName) {
