@@ -26,11 +26,8 @@ function main(argv) {
   var data = mergeYamls(yamls);
 
   createStuffFiles(data, argv.out);
-  
-  //console.log(data);
 
   console.log(colors.green('Done.'));
-
 }
 
 function loadYAML(file) {
