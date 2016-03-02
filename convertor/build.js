@@ -100,7 +100,7 @@ function createStuffFiles(data, dir) {
           fs.writeFileSync(filename, doc);
           created(filename);
         } else if (docSize) {
-          docAppender = ' ' + doc.replace(/\n/g, '\\n');
+          docAppender = ' ' + stringifyDoc(doc);
         }
 
         tagAttributesList.push(attributeName + docAppender);
@@ -121,7 +121,7 @@ function createStuffFiles(data, dir) {
     _.each(attributeValues, function createValues(values, tagAttributeName) {
       var valueData = _.map(values, function(doc, valueName) {
         if (! _.isEmpty(doc)) {
-          return valueName + ' ' + doc.replace(/\n/g, '\\n');
+          return valueName + ' ' + stringifyDoc(doc);
         } else {
           return valueName;
         }
@@ -133,6 +133,10 @@ function createStuffFiles(data, dir) {
       created(filename);
     });
   }
+}
+
+function stringifyDoc(text) {
+  return text.replace(/\n$/, '').replace(/\n/g, '\\n');
 }
 
 function created(msg) {
