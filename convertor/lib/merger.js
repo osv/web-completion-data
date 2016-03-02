@@ -135,6 +135,8 @@ function mergeYamls(yamls) {
         });
       } else if (_.isObject(attrValues)) {
         valuesWithDoc = attrValues;
+      } else {                  // as string
+        valuesWithDoc[''+attrValues] = '';
       }
 
       if (! _.isEmpty(valuesWithDoc)) {
