@@ -45,7 +45,8 @@ function loadYAML(file) {
 // create html stuff. They are sorted ABC
 function createStuffFiles(data, dir) {
   var tags = data.tags,
-      tagAttributes = data.attributes;
+      tagAttributes = data.attributes,
+      attributeValues = data.values;
 
   var tagFile = path.join(dir, FILE_TAG_LIST);
   var tagDocDir = path.join(dir, DIR_TAGS_DOC);
@@ -80,12 +81,10 @@ function createStuffFiles(data, dir) {
 
   if (!_.isEmpty(tagAttributes)) {
     var attributesDir = path.join(dir, DIR_ATTRIBUTES),
-        attributesDirDoc = path.join(dir, DIR_ATTRIBUTES_LARGE_DOC),
-        attributeValuesDir = path.join(dir, DIR_ATTRIBUTES_VALUES);
+        attributesDirDoc = path.join(dir, DIR_ATTRIBUTES_LARGE_DOC);
 
     mkdirp.sync(attributesDir);
     mkdirp.sync(attributesDirDoc);
-    mkdirp.sync(attributeValuesDir);
 
     // build attribute list for html tags
     _.each(tagAttributes, function createAttribute(tagAttributes, tagName) {
@@ -112,6 +111,26 @@ function createStuffFiles(data, dir) {
 
       fs.writeFileSync(filename, tagAttributeData);
       created(filename);      
+    });
+  }
+
+  if (!_.isEmpty(attributeValues)) {
+    var attributeValuesDir = path.join(dir, DIR_ATTRIBUTES_VALUES);
+    mkdirp.sync(attributeValuesDir);
+
+    _.each(attributeValues, function createValues(values, tagAttributeName) {
+      var valueData = _.map(values, function(doc, valueName) {
+        if (! _.isEmpty(doc)) {
+          return valueName + ' ' + doc.replace(/\n/g, '\\n');
+        } else {
+          return valueName;
+        }
+      });
+      valueData = valueData.sort().join('\n');
+
+      var filename = path.join(attributeValuesDir, tagAttributeName);
+      fs.writeFileSync(filename, valueData);
+      created(filename);
     });
   }
 }
