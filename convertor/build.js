@@ -9,6 +9,8 @@ var mergeYamls = require('./lib/merger.js'),
     fs = require('fs'),
     _ = require('underscore');
 
+var MAX_DOC_SIZE = 250;         // Size of documentation. If greater than create separate doc file
+
 if (! argv._.length || !argv.out) {
   console.log('Usage: build.js --out <dir> file1.yaml ...');
 }
@@ -43,13 +45,14 @@ function loadYAML(file) {
 // create html stuff. They are sorted ABC
 function createStuffFiles(data, dir) {
   var tags = data.tags,
-      attributes = data.attributes;
+      attributesData = data.attributes;
 
   var tagFile = path.join(dir, FILE_TAG_LIST);
   var tagDocDir = path.join(dir, DIR_TAGS_DOC);
   
   mkdirp.sync(dir);
- 
+
+  // html tags with docs
   if (! _.isEmpty(tags)) {
     mkdirp.sync(tagDocDir);
     var tagsData = _
@@ -75,19 +78,41 @@ function createStuffFiles(data, dir) {
     console.log('');
   }
 
-  if (!_.isEmpty(attributes)) {
+  if (!_.isEmpty(attributesData)) {
     var attributesDir = path.join(dir, DIR_ATTRIBUTES),
         attributesDirDoc = path.join(dir, DIR_ATTRIBUTES_LARGE_DOC),
         attributeValuesDir = path.join(dir, DIR_ATTRIBUTES_VALUES);
-    console.log(attributes);
 
     mkdirp.sync(attributesDir);
     mkdirp.sync(attributesDirDoc);
     mkdirp.sync(attributeValuesDir);
 
-    // _.each(attributes, '');
-    console.log('');
+    // build attribute list for html tags
+    _.each(attributesData, function createAttribute(tagAttributes, tagName) {
+      var tagAttributesList = [];
 
+      _.each(tagAttributes, function processEachAttribute(doc, attributeName) {
+        var docSize = _.size(doc),
+            docAppender = '',   // will be `' ' + doc` if doc is short
+            filename;
+        
+        if (docSize > MAX_DOC_SIZE) {
+          filename = path.join(attributesDirDoc, tagName + '-' + attributeName);
+          fs.writeFileSync(filename, doc);
+          created(filename);
+        } else if (docSize) {
+          docAppender = ' ' + doc.replace(/\n/g, '\\n');
+        }
+
+        tagAttributesList.push(attributeName + docAppender);
+      });
+
+      var tagAttributeData = tagAttributesList.sort().join('\n'),
+          filename = path.join(attributesDir, tagName);
+
+      fs.writeFileSync(filename, tagAttributeData);
+      created(filename);      
+    });
   }
 }
 
