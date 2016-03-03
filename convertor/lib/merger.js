@@ -106,7 +106,7 @@ function mergeYamls(yamls) {
       var tagNames = getTagNames(properties),
           doc = properties.d;
 
-      if (doc) {
+      if (!_.isUndefined(doc)) {
         _.each(tagNames, function addTagAttrDocMaybe(tagName) {
           var key = tagName + '-' + attributeName;
           if (!resAttributes[tagName]) {
