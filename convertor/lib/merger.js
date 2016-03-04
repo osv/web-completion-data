@@ -35,7 +35,7 @@ function mergeYamls(yamls) {
     var attributes = data.attributes;
     var tags = data.tags;
 
-    if (!tags || !attributes) {
+    if (!tags && !attributes) {
       warning('Yaml file have nor "attributes" nor "tags" properties');
     }
     
@@ -46,7 +46,7 @@ function mergeYamls(yamls) {
       }
     }
 
-    if (!_.isObject(tags) || _.isArray(tags)) {
+    if (tags && (!_.isObject(tags) || _.isArray(tags))) {
       error('"tags" should be hash, bug got:');
       console.log(colors.red(JSON.stringify(tags, null, 2)));
       process.exit(1);
