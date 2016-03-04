@@ -13,6 +13,7 @@ var MAX_DOC_SIZE = 250;         // Size of documentation. If greater than create
 
 if (! argv._.length || !argv.out) {
   console.log('Usage: build.js --out <dir> file1.yaml ...');
+  process.exit(0);
 }
 
 var FILE_TAG_LIST = 'html-tag-list',
