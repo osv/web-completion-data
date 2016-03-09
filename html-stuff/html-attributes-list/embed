@@ -1,4 +1,4 @@
-height
-src
-type
-width
+height height\n\nThe displayed height of the resource, in CSS pixels.
+src src\n\nThe URL of the resource being embedded.
+type type\n\nThe MIME type to use to select the plug-in to instantiate.
+width width\n\nThe displayed width of the resource, in CSS pixels.

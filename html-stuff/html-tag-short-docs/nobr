@@ -4,4 +4,3 @@ Non-standard.
 
 This tag is not standard HTML and should not be used. Instead use the CSS property white-space like this:
 <span style="white-space: nowrap">Long line with no breaks</span>
-

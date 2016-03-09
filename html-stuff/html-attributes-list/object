@@ -1,8 +1,15 @@
-data
-form
-height
-name
-type
-typemustmatch
-usemap
-width
+archive archive [HTML4 only] [Obsolete since HTML5]\n\nA space-separated list of URIs for archives of resources for the object.
+border border  [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nThe width of a border around the control, in pixels.
+classid classid [HTML4 only] [Obsolete since HTML5]\n\nThe URI of the object's implementation. It can be used together with, or in place of, the data attribute.
+codebase codebase [HTML4 only] [Obsolete since HTML5]\n\nThe base path used to resolve relative URIs specified by classid, data, or archive. If not specified, the default is the base URI of the current document.
+codetype codetype [HTML4 only] [Obsolete since HTML5]\n\nThe content type of the data specified by classid.
+data data\n\nThe address of the resource as a valid URL. At least one of data and type must be defined.
+declare
+form form [HTML5]\n\nThe form element, if any, that the object element is associated with (its form owner). The value of the attribute must be an ID of a <form> element in the same document.
+height height\n\nThe height of the displayed resource, in CSS pixels.
+name The name of valid browsing context (HTML5), or the name of the control (HTML 4).
+standby standby [HTML4 only] [Obsolete since HTML5]\n\nA message that the browser can show while loading the object's implementation and data.
+type type\n\nThe content type of the resource specified by data. At least one of data and type must be defined.
+typemustmatch typemustmatch [HTML5]\n\nThis Boolean attribute indicates if the type and the actual content type resource must match in order of this one to be used.
+usemap usemap\n\nA hash-name reference to a <map> element; that is a '#' followed by the value of a name of a map element.
+width width\n\nThe width of the display resource, in CSS pixels.

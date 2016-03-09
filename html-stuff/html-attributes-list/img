@@ -1,9 +1,15 @@
+align align [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nUse the vertical-align CSS property instead.\n\nThe alignment of the image with respect to its surrounding context.
 alt
+border border [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nThe width of a border around the image.
 crossorigin
-height
+height height\n\nThe height of the image in HTML5 CSS pixels, or HTML 4 in pixels or as a percentage.
+hspace hspace [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nThe number of pixels of white space to insert to the left and right of the image.
 ismap
-src
+longdesc longdesc [HTML4 only]\n\nThe URL of a description of the image to be displayed, which supplements the alt text. In HTML5, use a regular <a> element to link to the description.
+name name [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nA name for the element. It is supported in HTML 4 only for backward compatibility. Use the id attribute instead.
 sizes
+src src\n\nImage URL, this attribute is obligatory for the <img> element. On browsers supporting srcset, src is ignored if this one is provided.
 srcset
-width
-usemap
+usemap usemap\n\nThe partial URL (starting with '#') of an image map associated with the element.\n\nUsage note: \nYou cannot use this attribute if the <img> element is a descendant of an <a> or <button> element.
+vspace vspace [Deprecated since HTML4.01] [Obsolete since HTML5]\n\nThe number of pixels of white space to insert above and below the image.
+width width\n\nThe width of the image in pixels or percent.

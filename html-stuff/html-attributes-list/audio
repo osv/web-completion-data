@@ -1,11 +1,12 @@
-autoplay
 autobuffer
-buffered
-controls
-loop
+autoplay autoplay\n\nA Boolean attribute; if specified (even if the value is "false"!), the audio will automatically begin to play back as soon as it can do so without stopping to finish loading the data.
+buffered An attribute you can read to determine which time ranges of the media have been buffered. This attribute contains a TimeRanges object.
+controls controls\n\nIf this attribute is present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback.
+loop loop\n\nA Boolean attribute; if specified, we will, upon reaching the end of the audio, automatically seek back to the start.
 mosCurrentSampleOffset
-muted
-played
+mozCurrentSampleOffset mozCurrentSampleOffset\n\nThe offset, specified as the number of samples since the beginning of the audio stream, at which the audio is currently playing.
+muted A Boolean attribute which indicates whether the audio will be initially silenced. Its default value is false, meaning that the audio will be played.
+played A TimeRanges object indicating all the ranges of the audio that have been played.
 preload
-src
-volume
+src src\n\nThe URL of the audio to embed. This is subject to HTTP access controls. This is optional; you may instead use the <source> element within the audio block to specify the audio to embed.
+volume volume\n\nThe playback volume of any audio portions, in the range 0.0 (silent) to 1.0 (loudest).

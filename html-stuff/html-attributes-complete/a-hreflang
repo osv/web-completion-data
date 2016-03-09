@@ -1,4 +1,4 @@
-aa Description: Afar\nAdded: 2005-10-16\n
+aa Description: Afar\nAdded: 2005-10-16
 ab Description: Abkhazian\nAdded: 2005-10-16\nSuppress-Script: Cyrl
 af Description: Afrikaans\nAdded: 2005-10-16\nSuppress-Script: Latn
 am Description: Amharic\nAdded: 2005-10-16\nSuppress-Script: Ethi
@@ -23,7 +23,7 @@ da Description: Danish\nAdded: 2005-10-16\nSuppress-Script: Latn
 de Description: German\nAdded: 2005-10-16\nSuppress-Script: Latn
 dz Description: Dzongkha\nAdded: 2005-10-16\nSuppress-Script: Tibt
 el Description: Modern Greek (1453-)\nAdded: 2005-10-16\nSuppress-Script: Grek
-en Description: English\nAdded: 2005-10-16\nSuppress-Script: Latn\n
+en Description: English\nAdded: 2005-10-16\nSuppress-Script: Latn
 eo Description: Esperanto\nAdded: 2005-10-16\nSuppress-Script: Latn
 es Description: Spanish\nDescription: Castilian\nAdded: 2005-10-16\nSuppress-Script: Latn
 et Description: Estonian\nAdded: 2005-10-16\nSuppress-Script: Latn\nScope: macrolanguage

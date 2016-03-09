@@ -197,7 +197,7 @@ rest-before Specifies a rest or prosodic boundary to be observed before speaking
 richness Specifies the richness, or brightness, of the speaking voice.
 right Specifies the right position of a positioned element\nCSS2
 speak Specifies whether text will be rendered aurally and if so, in what manner.
-speak-as The "speak-as" property determines in what manner text gets rendered aurally, based upon a predefined list of possibilities.\n Value: normal | spell-out || digits || [ literal-punctuation | no-punctuation ]\nCSS3\n
+speak-as The "speak-as" property determines in what manner text gets rendered aurally, based upon a predefined list of possibilities.\n Value: normal | spell-out || digits || [ literal-punctuation | no-punctuation ]\nCSS3
 speak-header This property specifies whether table headers are spoken before every cell, or only before a cell when that cell is associated with a different header than the previous cell.\n Value: once | always
 speak-numeral This property controls how numerals are spoken.
 speak-punctuation This property specifies how punctuation is spoken.
