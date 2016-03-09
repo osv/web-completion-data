@@ -1,5 +1,6 @@
 SOURCES = \
 	./src/tags.yaml \
+	./src/events.yaml \
 	./src/attributes.yaml \
 	./src/attribute-values.yaml
 
