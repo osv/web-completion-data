@@ -1,9 +1,7 @@
 onafterprint onafterprint [HTML5]\n\nFunction to call after the user has printed the document.
 onbeforeprint onbeforeprint [HTML5]\n\nFunction to call when the user requests printing of the document.
 onbeforeunload onbeforeunload [HTML5]\n\nFunction to call when the document is about to be unloaded.
-onblur onblur [HTML5]\n\nFunction to call when the document loses focus.
 onerror onerror [HTML5]\n\nFunction to call when the document fails to load properly.
-onfocus onfocus [HTML5]\n\nFunction to call when the document receives focus.
 onhashchange onhashchange [HTML5]\n\nFunction to call when the fragment identifier part (starting with the hash ('#') character) of the document's current address has changed.
 onlanguagechange onlanguagechange [experimental]\n\nFunction to call when the preferred languages changed.
 onload onload [HTML5]\n\nFunction to call when the document has finished loading.
@@ -11,8 +9,6 @@ onmessage onmessage [HTML5]\n\nFunction to call when the document has received a
 onoffline onoffline [HTML5]\n\nFunction to call when network communication has failed.
 ononline ononline [HTML5]\n\nFunction to call when network communication has been restored.
 onpopstate onpopstate [HTML5]\n\nFunction to call when the user has navigated session history.
-onredo onredo [HTML5]\n\nFunction to call when the user has moved forward in undo transaction history.
 onresize onresize [HTML5]\n\nFunction to call when the document has been resized.
 onstorage onstorage [HTML5]\n\nFunction to call when the storage area has changed.
-onundo onundo [HTML5]\n\nFunction to call when the user has moved backward in undo transaction history.
 onunload onunload [HTML5]\n\nFunction to call when the document is going away.
