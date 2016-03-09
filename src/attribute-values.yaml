@@ -714,6 +714,17 @@ types:
     text/x-markdown: Markdown formatted text
     application/x-pkcs12: a variant of PKCS standard files
 
+    # some templates     
+    riot/tag:
+    text/basis-template:
+    text/ng-template:
+    text/template:
+    text/x-dot-template:
+    text/x-handlebars-template:
+    text/x-handlebars:
+    text/x-kendo-template:
+    text/x-template:
+      
   boolean1: &ONOFF
     on:
     off:
