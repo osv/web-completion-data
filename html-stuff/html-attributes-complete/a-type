@@ -90,18 +90,27 @@ multipart/form-data MIME Webform; Defined in RFC 2388
 multipart/mixed MIME Email; Defined in RFC 2045 and RFC 2046
 multipart/related MIME Email; Defined in RFC 2387 and used by MHTML (HTML mail)
 multipart/signed Defined in RFC 1847
+riot/tag
+text/basis-template
 text/cmd commands; subtype resident in Gecko browsers like Firefox 3.5
 text/css Cascading Style Sheets; Defined in RFC 2318
 text/csv Comma-separated values; Defined in RFC 4180
 text/html HTML; Defined in RFC 2854
 text/javascript (Obsolete) JavaScript; Defined in and made obsolete in RFC 4329 in order to discourage its usage in favor of application/javascript. However, text/javascript is allowed in HTML 4 and 5 and, unlike application/javascript, has cross-browser support. The "type" attribute of the <script> tag in HTML5 is optional and there is no need to use it at all since all browsers have always assumed the correct default (even in HTML 4 where it was required by the specification).
+text/ng-template
 text/plain Textual data; Defined in RFC 2046 and RFC 3676
 text/rtf RTF; Defined by Paul Lindner
+text/template
 text/vcard vCard (contact information); Defined in RFC 6350
 text/vnd.abc ABC music notation; Registered
+text/x-dot-template
 text/x-gwt-rpc GoogleWebToolkit data
+text/x-handlebars
+text/x-handlebars-template
 text/x-jquery-tmpl jQuery template data
+text/x-kendo-template
 text/x-markdown Markdown formatted text
+text/x-template
 text/x-yaml
 text/xml Extensible Markup Language; Defined in RFC 3023
 text/yaml
