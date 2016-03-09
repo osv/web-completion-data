@@ -749,7 +749,7 @@ attributes:
       t: table
       v: 1
   - charset:
-      t: [meta, script]
+      t: [meta, script, link]
       v: *CHARSET
   - contenteditable:
       t: global
