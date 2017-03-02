@@ -45,10 +45,13 @@ EOS
 
             # list of values
             my @valuesArr;
-            $values =~s/.*?<nowiki>//;
-            $values =~s|</nowiki>.*||;
+            my $sanitizedValues = '';
 
-            foreach my $val (split /\|/, $values) {
+            if ($values =~m |<nowiki>(.*?)</nowiki>|) {
+                $sanitizedValues = $1;
+            }
+
+            foreach my $val (split /\|/, $sanitizedValues) {
                 $val =~s/^\s*//;
                 $val =~s/\s*$//;
                 next if $val eq '';

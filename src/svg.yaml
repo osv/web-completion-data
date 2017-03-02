@@ -1,0 +1,1318 @@
+#SVG attributes
+# Source from https://www.w3.org/Graphics/SVG/WG/wiki/Proposals/AttributeWhitespace
+attributes:
+
+  - alphabetic:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - amplitude:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<number>"
+      v: [  ]
+
+  - ascent:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - azimuth:
+      t: [ feDistantLight ]
+      d: "<number>"
+      v: [  ]
+
+  - baseFrequency:
+      t: [ feTurbulence ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - bias:
+      t: [ feConvolveMatrix ]
+      d: "<number>"
+      v: [  ]
+
+  - descent:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - diffuseConstant:
+      t: [ feDiffuseLighting ]
+      d: "<number>"
+      v: [  ]
+
+  - divisor:
+      t: [ feConvolveMatrix ]
+      d: "<number>"
+      v: [  ]
+
+  - elevation:
+      t: [ feDistantLight ]
+      d: "<number>"
+      v: [  ]
+
+  - exponent:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<number>"
+      v: [  ]
+
+  - filterRes:
+      t: [ filter ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - hanging:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - ideographic:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - intercept:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<number>"
+      v: [  ]
+
+  - k:
+      t: [ hkern, vkern ]
+      d: "<number>"
+      v: [  ]
+
+  - k1:
+      t: [ feComposite ]
+      d: "<number>"
+      v: [  ]
+
+  - k2:
+      t: [ feComposite ]
+      d: "<number>"
+      v: [  ]
+
+  - k3:
+      t: [ feComposite ]
+      d: "<number>"
+      v: [  ]
+
+  - k4:
+      t: [ feComposite ]
+      d: "<number>"
+      v: [  ]
+
+  - kernelMatrix:
+      t: [ feConvolveMatrix ]
+      d: "<list of numbers>"
+      v: [  ]
+
+  - kernelUnitLength:
+      t: [ feConvolveMatrix, feDiffuseLighting, feSpecularLighting ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - keyPoints:
+      t: [ animateMotion ]
+      d: "<list-of-numbers>"
+      v: [  ]
+
+  - keySplines:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "<list> (doesn't say of what except in prose, but are 4 control points per spline, so essentially <list-of-number>)"
+      v: [  ]
+
+  - keyTimes:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "<list> (essentially <list-of-number> with additional restrictions on the number of items in the list and the number range)"
+      v: [  ]
+
+  - limitingConeAngle:
+      t: [ feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - mathematical:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - offset:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<number>"
+      v: [  ]
+
+  - offset:
+      t: [ stop ]
+      d: "<number> | <percentage>"
+      v: [  ]
+
+  - order:
+      t: [ feConvolveMatrix ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - pathLength:
+      t: [ path ]
+      d: "<number>"
+      v: [  ]
+
+  - pointsAtX:
+      t: [ feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - pointsAtY:
+      t: [ feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - pointsAtZ:
+      t: [ feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - radius:
+      t: [ feMorphology ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - repeatCount:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<number> | indefinite"
+      v: [ indefinite ]
+
+  - rotate:
+      t: [ altGlyph, text, tref, tspan ]
+      d: "<list-of-numbers>"
+      v: [  ]
+
+  - rotate:
+      t: [ animateMotion ]
+      d: "<number> | auto | auto-reverse"
+      v: [ auto, auto-reverse ]
+
+  - scale:
+      t: [ feDisplacementMap ]
+      d: "<number>"
+      v: [  ]
+
+  - seed:
+      t: [ feTurbulence ]
+      d: "<number>"
+      v: [  ]
+
+  - slope:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR, font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - specularConstant:
+      t: [ feSpecularLighting ]
+      d: "<number>"
+      v: [  ]
+
+  - specularExponent:
+      t: [ feSpecularLighting, feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - stdDeviation:
+      t: [ feDropShadow, feGaussianBlur ]
+      d: "<number-optional-number>"
+      v: [  ]
+
+  - stemh:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - stemv:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - surfaceScale:
+      t: [ feDiffuseLighting, feSpecularLighting ]
+      d: "<number>"
+      v: [  ]
+
+  - tabindex:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, source, svg, switch, symbol, text, textPath, track, tref, tspan, use, video, view ]
+      d: "<number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)"
+      v: [  ]
+
+  - tableValues:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<list-of-numbers>"
+      v: [  ]
+
+  - values:
+      t: [ feColorMatrix ]
+      d: "<list-of-numbers>"
+      v: [  ]
+
+  - version:
+      t: [ svg ]
+      d: "<number>"
+      v: [  ]
+
+  - viewBox:
+      t: [ marker, pattern, svg, symbol, view ]
+      d: "a list of four numbers <min-x>, <min-y>, <width> and <height>, separated by whitespace and/or a comma"
+      v: [  ]
+
+  - x:
+      t: [ fePointLight, feSpotLight, glyphRef ]
+      d: "<number>"
+      v: [  ]
+
+  - y:
+      t: [ fePointLight, feSpotLight, glyphRef ]
+      d: "<number>"
+      v: [  ]
+
+  - z:
+      t: [ fePointLight, feSpotLight ]
+      d: "<number>"
+      v: [  ]
+
+  - rotate:
+      t: [ hatch ]
+      d: "<angle>"
+      v: [  ]
+
+  - numOctaves:
+      t: [ feTurbulence ]
+      d: "<integer>"
+      v: [  ]
+
+  - targetX:
+      t: [ feConvolveMatrix ]
+      d: "<integer>"
+      v: [  ]
+
+  - targetY:
+      t: [ feConvolveMatrix ]
+      d: "<integer>"
+      v: [  ]
+
+  - canvasHeight:
+      t: [ canvas ]
+      d: "<length>"
+      v: [  ]
+
+  - canvasWidth:
+      t: [ canvas ]
+      d: "<length>"
+      v: [  ]
+
+  - cx:
+      t: [ circle, ellipse, radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - cy:
+      t: [ circle, ellipse, radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - dx:
+      t: [ feDropShadow, feOffset ]
+      d: "<length>"
+      v: [  ]
+
+  - dx:
+      t: [ altGlyph, glyphRef, text, tref, tspan ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeLengths <list-of-lengths>]"
+      v: [  ]
+
+  - dy:
+      t: [ feDropShadow, feOffset ]
+      d: "<length>"
+      v: [  ]
+
+  - dy:
+      t: [ altGlyph, glyphRef, text, tref, tspan ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeLengths <list-of-lengths>]"
+      v: [  ]
+
+  - fr:
+      t: [ radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - frameHeight:
+      t: [ iframe ]
+      d: "<length>"
+      v: [  ]
+
+  - frameWidth:
+      t: [ iframe ]
+      d: "<length>"
+      v: [  ]
+
+  - fx:
+      t: [ radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - fy:
+      t: [ radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - height:
+      t: [ canvas, iframe, image, video ]
+      d: "<length> | auto"
+      v: [ auto ]
+
+  - height:
+      t: [ feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter, foreignObject, pattern, rect, text, use ]
+      d: "<length>"
+      v: [  ]
+
+  - height:
+      t: [ mask, svg ]
+      d: "<length> | <percentage> (Presumably related to the issue about percentages in [https://svgwg.org/svg2-draft/types.html#DataTypeLength])"
+      v: [  ]
+
+  - markerHeight:
+      t: [ marker ]
+      d: "<length>"
+      v: [  ]
+
+  - markerWidth:
+      t: [ marker ]
+      d: "<length>"
+      v: [  ]
+
+  - offset:
+      t: [ hatchPath ]
+      d: "<length>"
+      v: [  ]
+
+  - pitch:
+      t: [ hatchPath ]
+      d: "currently undefined (but should probably be either <length> or <number>)"
+      v: [  ]
+
+  - position:
+      t: [ marker ]
+      d: "<length> | <percentage>"
+      v: [  ]
+
+  - r:
+      t: [ circle, radialGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - refX:
+      t: [ marker ]
+      d: "<length>"
+      v: [  ]
+
+  - refY:
+      t: [ marker ]
+      d: "<length>"
+      v: [  ]
+
+  - rx:
+      t: [ ellipse, rect ]
+      d: "<length>"
+      v: [  ]
+
+  - ry:
+      t: [ ellipse, rect ]
+      d: "<length>"
+      v: [  ]
+
+  - startOffset:
+      t: [ textPath ]
+      d: "<length>"
+      v: [  ]
+
+  - textLength:
+      t: [ text, textPath, tref, tspan ]
+      d: "<length>"
+      v: [  ]
+
+  - width:
+      t: [ canvas, iframe, image, video ]
+      d: "<length> | auto"
+      v: [ auto ]
+
+  - width:
+      t: [ feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter, foreignObject, pattern, rect, text, use ]
+      d: "<length>"
+      v: [  ]
+
+  - width:
+      t: [ mask, svg ]
+      d: "<length> | <percentage>"
+      v: [  ]
+
+  - x:
+      t: [ altGlyph, text, tref, tspan ]
+      d: "<list-of-coordinates> (ISSUE: not linked to a definition of <coordinate>, seems to be missing in SVG2, in SVG 1.1 it was the same as <length>)"
+      v: [  ]
+
+  - x:
+      t: [ audio, canvas, cursor, foreignObject, hatch, iframe, image, pattern, rect, svg, use, video ]
+      d: "<length>"
+      v: [  ]
+
+  - x:
+      t: [ feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter ]
+      d: "<coordinate>"
+      v: [  ]
+
+  - x:
+      t: [ mask ]
+      d: "<length> | <percentage>"
+      v: [  ]
+
+  - x:
+      t: [ meshGradient ]
+      d: "ISSUE: currently undefined (but should probably be <length>)"
+      v: [  ]
+
+  - x1:
+      t: [ line, linearGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - x2:
+      t: [ line, linearGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - y:
+      t: [ altGlyph, text, tref, tspan ]
+      d: "<list-of-coordinates> (ISSUE: not linked to a definition of <coordinate>, seems to be missing in SVG2, in SVG 1.1 it was the same as <length>)"
+      v: [  ]
+
+  - y:
+      t: [ audio, canvas, cursor, foreignObject, hatch, iframe, image, pattern, rect, svg, use, video ]
+      d: "<length> "
+      v: [  ]
+
+  - y:
+      t: [ feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter ]
+      d: "<coordinate>"
+      v: [  ]
+
+  - y:
+      t: [ mask ]
+      d: "<length> | <percentage>"
+      v: [  ]
+
+  - y:
+      t: [ meshGradient ]
+      d: "ISSUE: currently undefined (but should probably be <length>)"
+      v: [  ]
+
+  - y1:
+      t: [ line, linearGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - y2:
+      t: [ line, linearGradient ]
+      d: "<length>"
+      v: [  ]
+
+  - accumulate:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "none | sum"
+      v: [ none, sum ]
+
+  - additive:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "replace | sum"
+      v: [ replace, sum ]
+
+  - attributeType:
+      t: [ animate, animateTransform, set ]
+      d: "CSS | XML | auto"
+      v: [ CSS, XML, auto ]
+
+  - calcMode:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "discrete | linear | paced | spline"
+      v: [ discrete, linear, paced, spline ]
+
+  - clipPathUnits:
+      t: [ clipPath ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - crossorigin:
+      t: [ audio, video ]
+      d: "anonymous | use-credentials (Note, in html5 this is a [http://www.w3.org/TR/html5/infrastructure.html#cors-settings-attribute CORS settings attribute])"
+      v: [ anonymous, use-credentials ]
+
+  - edgeMode:
+      t: [ feConvolveMatrix ]
+      d: "duplicate | wrap | none"
+      v: [ duplicate, none, wrap ]
+
+  - fill:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "freeze | remove"
+      v: [ freeze, remove ]
+
+  - filterUnits:
+      t: [ filter ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - gradientUnits:
+      t: [ linearGradient, meshGradient, radialGradient ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - hatchContentUnits:
+      t: [ hatch ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - hatchUnits:
+      t: [ hatch ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - kind:
+      t: [ track ]
+      d: "subtitles | captions | descriptions | chapters | metadata"
+      v: [ captions, chapters, descriptions, metadata, subtitles ]
+
+  - lengthAdjust:
+      t: [ text, textPath, tref, tspan ]
+      d: "spacing | spacingAndGlyphs"
+      v: [ spacing, spacingAndGlyphs ]
+
+  - markerUnits:
+      t: [ marker ]
+      d: "strokeWidth | userSpaceOnUse"
+      v: [ strokeWidth, userSpaceOnUse ]
+
+  - maskContentUnits:
+      t: [ mask ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - maskUnits:
+      t: [ mask ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - method:
+      t: [ textPath ]
+      d: "align | stretch"
+      v: [ align, stretch ]
+
+  - mode:
+      t: [ feBlend ]
+      d: "normal | multiply | screen | darken | lighten"
+      v: [ darken, lighten, multiply, normal, screen ]
+
+  - operator:
+      t: [ feComposite ]
+      d: "over | in | out | atop | xor | arithmetic"
+      v: [ arithmetic, atop, in, out, over, xor ]
+
+  - operator:
+      t: [ feMorphology ]
+      d: "erode | dilate"
+      v: [ dilate, erode ]
+
+  - orientation:
+      t: [ glyph ]
+      d: "h | v"
+      v: [ h, v ]
+
+  - origin:
+      t: [ animateMotion ]
+      d: "default (the attribute \"has no effect in SVG\" according to spec, do we need to keep it at all?)"
+      v: [ default ]
+
+  - patternContentUnits:
+      t: [ pattern ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - patternUnits:
+      t: [ pattern ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - playbackOrder:
+      t: [ svg ]
+      d: "forwardOnly | all"
+      v: [ all, forwardOnly ]
+
+  - preload:
+      t: [ audio, video ]
+      d: "none | metadata | auto"
+      v: [ auto, metadata, none ]
+
+  - preserveAlpha:
+      t: [ feConvolveMatrix ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - preserveAspectRatio:
+      t: [ canvas, feImage, iframe, image, marker, pattern, svg, symbol, video, view ]
+      d: "[defer] <align> [<meetOrSlice>]"
+      v: [  ]
+
+  - primitiveUnits:
+      t: [ filter ]
+      d: "userSpaceOnUse | objectBoundingBox"
+      v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - requiredFeatures:
+      t: [ a, altGlyph, animate, animateMotion, animateTransform, audio, canvas, circle, clipPath, discard, ellipse, foreignObject, g, iframe, image, line, mask, path, polygon, polyline, rect, set, svg, switch, text, textPath, tref, tspan, use, video ]
+      d: "list-of-features (whitespace separated feature strings)"
+      v: [  ]
+
+  - restart:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "always | whenNotActive | never"
+      v: [ always, never, whenNotActive ]
+
+  - role:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "[https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]"
+      v: [  ]
+
+  - spacing:
+      t: [ textPath ]
+      d: "auto | exact"
+      v: [ auto, exact ]
+
+  - spreadMethod:
+      t: [ linearGradient, radialGradient ]
+      d: "pad | reflect | repeat"
+      v: [ pad, reflect, repeat ]
+
+  - stitchTiles:
+      t: [ feTurbulence ]
+      d: "stitch | noStitch"
+      v: [ noStitch, stitch ]
+
+  - timelineBegin:
+      t: [ svg ]
+      d: "onLoad | onStart"
+      v: [ onLoad, onStart ]
+
+  - type:
+      t: [ animateTransform ]
+      d: "translate | scale | rotate | skewX | skewY"
+      v: [ rotate, scale, skewX, skewY, translate ]
+
+  - type:
+      t: [ feColorMatrix ]
+      d: "matrix | saturate | hueRotate | luminanceToAlpha"
+      v: [ hueRotate, luminanceToAlpha, matrix, saturate ]
+
+  - type:
+      t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "identity | table | discrete | linear | gamma"
+      v: [ discrete, gamma, identity, linear, table ]
+
+  - type:
+      t: [ feTurbulence ]
+      d: "fractalNoise | turbulence"
+      v: [ fractalNoise, turbulence ]
+
+  - xChannelSelector:
+      t: [ feDisplacementMap ]
+      d: "R | G | B | A"
+      v: [ A, B, G, R ]
+
+  - yChannelSelector:
+      t: [ feDisplacementMap ]
+      d: "R | G | B | A"
+      v: [ A, B, G, R ]
+
+  - zoomAndPan:
+      t: [ svg, view ]
+      d: "disable | magnify"
+      v: [ disable, magnify ]
+
+  - autoplay:
+      t: [ audio, video ]
+      d: ""
+      v: [  ]
+
+  - controls:
+      t: [ audio, video ]
+      d: ""
+      v: [  ]
+
+  - default:
+      t: [ track ]
+      d: ""
+      v: [  ]
+
+  - loop:
+      t: [ audio, video ]
+      d: ""
+      v: [  ]
+
+  - muted:
+      t: [ audio, video ]
+      d: ""
+      v: [  ]
+
+  - seamless:
+      t: [ iframe ]
+      d: ""
+      v: [  ]
+
+  - attributeName:
+      t: [ animate, animateTransform, set ]
+      d: "<XMLName>"
+      v: [  ]
+
+  - baseProfile:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - bbox:
+      t: [ font-face ]
+      d: "<string>"
+      v: [  ]
+
+  - by:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "[http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)"
+      v: [  ]
+
+  - class:
+      t: [ a, altGlyph, audio, canvas, circle, clipPath, defs, desc, ellipse, feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter, font, foreignObject, g, glyph, glyphRef, hatch, hatchPath, iframe, image, line, linearGradient, marker, mask, meshGradient, meshPatch, meshRow, missing-glyph, path, pattern, polygon, polyline, radialGradient, rect, solidColor, source, stop, svg, switch, symbol, text, textPath, title, track, tref, tspan, use, video ]
+      d: "whitespace separated list - HTML5 allows leading and trailing whitespace [http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#set-of-space-separated-tokens]."
+      v: [  ]
+
+  - format:
+      t: [ altGlyph, glyphRef ]
+      d: "<string>"
+      v: [  ]
+
+  - from:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "[http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)"
+      v: [  ]
+
+  - g1:
+      t: [ hkern, vkern ]
+      d: "<author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)"
+      v: [  ]
+
+  - g2:
+      t: [ hkern, vkern ]
+      d: "<author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)"
+      v: [  ]
+
+  - glyphRef:
+      t: [ altGlyph, glyphRef ]
+      d: "<string>"
+      v: [  ]
+
+  - in:
+      t: [ feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feGaussianBlur, feMorphology, feOffset, feSpecularLighting, feTile ]
+      d: "SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <filter-primitive-reference> (mix of enumerated and string)"
+      v: [ BackgroundAlpha, BackgroundImage, FillPaint, SourceAlpha, SourceGraphic, StrokePaint ]
+
+  - in2:
+      t: [ feBlend, feComposite, feDisplacementMap ]
+      d: "SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <filter-primitive-reference> (mix of enumerated and string)"
+      v: [ BackgroundAlpha, BackgroundImage, FillPaint, SourceAlpha, SourceGraphic, StrokePaint ]
+
+  - label:
+      t: [ track ]
+      d: "[http://www.w3.org/TR/html5/dom.html#attribute-text Text] ([http://www.w3.org/TR/html5/embedded-content-0.html#attr-track-label cannot be the empty string])"
+      v: [  ]
+
+  - mediagroup:
+      t: [ audio, video ]
+      d: "[http://www.w3.org/TR/html5/dom.html#attribute-text Text]"
+      v: [  ]
+
+  - name:
+      t: [ font-face-name ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - result:
+      t: [ eBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence ]
+      d: "<filter-primitive-reference> (unclear if leading & trailing whitespace is stripped or not)"
+      v: [  ]
+
+  - sandbox:
+      t: [ iframe ]
+      d: "[http://www.w3.org/TR/html5/infrastructure.html#unordered-set-of-unique-space-separated-tokens Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of \"allow-forms\", \"allow-pointer-lock\", \"allow-popups\", \"allow-same-origin\", \"allow-scripts and \"allow-top-navigation\"]"
+      v: [  ]
+
+  - string:
+      t: [ font-face-name ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - target:
+      t: [ a ]
+      d: "_replace | _self | _parent | _top | _blank | <XML-Name>"
+      v: [ _blank, _parent, _replace, _self, _top ]
+
+  - title:
+      t: [ audio, iframe, track, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>] (in html5: Text)"
+      v: [  ]
+
+  - title:
+      t: [ style ]
+      d: "[https://svgwg.org/svg2-draft/styling.html#StyleElementTitleAttribute advisory-title] (in html5: Text)"
+      v: [  ]
+
+  - to:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "[http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)"
+      v: [  ]
+
+  - to:
+      t: [ set ]
+      d: "<value> (svg doesn't state that leading and trailing whitespace is ignored)"
+      v: [  ]
+
+  - type:
+      t: [ script, style ]
+      d: "content-type (in HTML5: [http://www.w3.org/TR/html5/infrastructure.html#valid-mime-type valid MIME type])"
+      v: [  ]
+
+  - type:
+      t: [ source ]
+      d: "[http://www.w3.org/TR/html5/infrastructure.html#valid-mime-type valid MIME type]"
+      v: [  ]
+
+  - u1:
+      t: [ hkern, vkern ]
+      d: "[<character> | <urange> ] [, [<character> | <urange>] ]*"
+      v: [  ]
+
+  - u2:
+      t: [ hkern, vkern ]
+      d: "[<character> | <urange> ] [, [<character> | <urange>] ]*"
+      v: [  ]
+
+  - unicode:
+      t: [ glyph ]
+      d: "<string>"
+      v: [  ]
+
+  - values:
+      t: [ animate, animateMotion, animateTransform ]
+      d: "[http://www.w3.org/TR/2001/REC-smil-animation-20010904/#ValuesAttribute <list>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)"
+      v: [  ]
+
+  - viewTarget:
+      t: [ view ]
+      d: "<XML-Name>"
+      v: [  ]
+
+  - widths:
+      t: [ font-face ]
+      d: "<string>"
+      v: [  ]
+
+  - onabort:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onbegin:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onclick:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onend:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onerror:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onfocusin:
+      t: [ altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onfocusout:
+      t: [ altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onload:
+      t: [ a, altGlyph, animate, animateMotion, animateTransform, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, set, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onmousedown:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onmousemove:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onmouseout:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onmouseover:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onmouseup:
+      t: [ a, altGlyph, audio, canvas, circle, defs, ellipse, foreignObject, g, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onrepeat:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onresize:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onscroll:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onunload:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - onzoom:
+      t: [ svg ]
+      d: "[https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]"
+      v: [  ]
+
+  - lang:
+      t: [ desc, glyph, title ]
+      d: "%LanguageCodes; ([https://svgwg.org/svg2-draft/fonts.html#GlyphElementLangAttribute a comma-separated list of language codes], [http://www.w3.org/TR/html5/dom.html#attr-lang in html it's a single language code or empty])"
+      v: [  ]
+
+  - srclang:
+      t: [ track ]
+      d: "[http://www.w3.org/TR/html5/embedded-content-0.html#attr-track-srclang Valid BCP 47 language tag]"
+      v: [  ]
+
+  - systemLanguage:
+      t: [ a, altGlyph, animate, animateMotion, animateTransform, audio, canvas, circle, clipPath, discard, ellipse, foreignObject, g, iframe, image, line, mask, path, polygon, polyline, rect, set, svg, switch, text, textPath, tref, tspan, use, video ]
+      d: "a comma-separated list of language names as defined in BCP 47"
+      v: [  ]
+
+  - name:
+      t: [ iframe ]
+      d: "[http://www.w3.org/TR/html5/browsers.html#valid-browsing-context-name A valid browsing context name or keyword]"
+      v: [  ]
+
+  - media:
+      t: [ source ]
+      d: "[http://www.w3.org/TR/html5/infrastructure.html#valid-media-query A valid media query] (in other words: leading and trailing WS allowed) "
+      v: [  ]
+
+  - media:
+      t: [ style ]
+      d: "media (ISSUE: should be the same as for the source element, and the style element in html5) "
+      v: [  ]
+
+  - poster:
+      t: [ video ]
+      d: "[http://www.w3.org/TR/html5/infrastructure.html#valid-non-empty-url-potentially-surrounded-by-spaces Valid non-empty URL potentially surrounded by spaces]"
+      v: [  ]
+
+  - requiredExtensions:
+      t: [ a, altGlyph, animate, animateMotion, animateTransform, audio, canvas, circle, clipPath, discard, ellipse, foreignObject, g, iframe, image, line, mask, path, polygon, polyline, rect, set, svg, switch, text, textPath, tref, tspan, use, video ]
+      d: "list-of-extensions (whitespace separated IRIs)"
+      v: [  ]
+
+  - src:
+      t: [ audio, iframe, source, track, video ]
+      d: "[http://www.w3.org/TR/html5/infrastructure.html#valid-non-empty-url-potentially-surrounded-by-spaces Valid non-empty URL potentially surrounded by spaces]"
+      v: [  ]
+
+  - srcdoc:
+      t: [ iframe ]
+      d: "[http://www.w3.org/TR/html5/embedded-content-0.html#an-iframe-srcdoc-document The source of an iframe srcdoc document*] (allows whitespace in html, in xml it depends on the xml spec)"
+      v: [  ]
+
+  - d:
+      t: [ glyph, hatchPath, missing-glyph, path, textPath ]
+      d: "<path-data> (grammar allows leading and trailing whitespace)"
+      v: [  ]
+
+  - path:
+      t: [ animateMotion ]
+      d: "<path-data>"
+      v: [  ]
+
+  - path:
+      t: [ stop ]
+      d: "\"mesh path data\" (undefined term, but if the normal path data allows whitespace this probably should too)"
+      v: [  ]
+
+  - points:
+      t: [ polygon, polyline ]
+      d: "[https://svgwg.org/svg2-draft/shapes.html#PointsBNF <list-of-points>] (allows leading and trailing whitespace)"
+      v: [  ]
+
+  - style:
+      t: [ a, altGlyph, audio, canvas, circle, clipPath, defs, desc, ellipse, feBlend, feColorMatrix, feComponentTransfer, feComposite, feConvolveMatrix, feCustom, feDiffuseLighting, feDisplacementMap, feDropShadow, feFlood, feGaussianBlur, feImage, feMerge, feMorphology, feOffset, feSpecularLighting, feTile, feTurbulence, filter, font, foreignObject, g, glyph, glyphRef, hatch, hatchPath, iframe, image, line, linearGradient, marker, mask, meshGradient, meshPatch, meshRow, missing-glyph, path, pattern, polygon, polyline, radialGradient, rect, solidColor, source, stop, svg, switch, symbol, text, textPath, title, track, tref, tspan, use, video ]
+      d: "style (should reference [http://www.w3.org/TR/2013/REC-css-style-attr-20131107/ CSS Style Attributes] instead for the syntax definition, in any case CSS allows whitespace)"
+      v: [  ]
+
+  - gradientTransform:
+      t: [ linearGradient, meshGradient, radialGradient ]
+      d: "<transform-list> (which is equivalent to \"list of <transform-function>\". Should this reference http://www.w3.org/TR/css3-transforms/#svg-syntax? It's not clear if leading and trailing whitespace is allowed.)"
+      v: [  ]
+
+  - hatchTransform:
+      t: [ hatch ]
+      d: "<transform-list>"
+      v: [  ]
+
+  - patternTransform:
+      t: [ pattern ]
+      d: "<transform-list>"
+      v: [  ]
+
+  - begin:
+      t: [ animate, animateMotion, animateTransform, discard, set ]
+      d: "<begin-value-list> (allows whitespace in some but not all cases)"
+      v: [  ]
+
+  - dur:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<Clock-value> | media | indefinite (allows whitespace for the clockvalue)"
+      v: [ indefinite, media ]
+
+  - end:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<end-value-list> (allows whitespace in some but not all cases)"
+      v: [  ]
+
+  - max:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<Clock-value> | media (allows whitespace for the clockvalue)"
+      v: [ media ]
+
+  - min:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<Clock-value> | media (allows whitespace for the clockvalue)"
+      v: [ media ]
+
+  - orient:
+      t: [ marker ]
+      d: "auto | auto-start-reverse | <angle> | <number>"
+      v: [ auto, auto-start-reverse ]
+
+  - repeatDur:
+      t: [ animate, animateMotion, animateTransform, set ]
+      d: "<Clock-value> | indefinite (allows whitespace for the clockvalue)"
+      v: [ indefinite ]
+
+# SVG elements
+tags:
+  altGlyph: SVG
+
+  altGlyphItem: SVG
+
+  animate: SVG
+
+  animateMotion: SVG
+
+  animateTransform: SVG
+
+  audio: SVG
+
+  canvas: SVG
+
+  circle: SVG
+
+  clipPath: SVG
+
+  cursor: SVG
+
+  defs: SVG
+
+  desc: SVG
+
+  discard: SVG
+
+  eBlend: SVG
+
+  ellipse: SVG
+
+  feBlend: SVG
+
+  feColorMatrix: SVG
+
+  feComponentTransfer: SVG
+
+  feComposite: SVG
+
+  feConvolveMatrix: SVG
+
+  feCustom: SVG
+
+  feDiffuseLighting: SVG
+
+  feDisplacementMap: SVG
+
+  feDistantLight: SVG
+
+  feDropShadow: SVG
+
+  feFlood: SVG
+
+  feFuncA: SVG
+
+  feFuncB: SVG
+
+  feFuncG: SVG
+
+  feFuncR: SVG
+
+  feGaussianBlur: SVG
+
+  feImage: SVG
+
+  feMerge: SVG
+
+  feMorphology: SVG
+
+  feOffset: SVG
+
+  fePointLight: SVG
+
+  feSpecularLighting: SVG
+
+  feSpotLight: SVG
+
+  feTile: SVG
+
+  feTurbulence: SVG
+
+  filter: SVG
+
+  font: SVG
+
+  font-face: SVG
+
+  font-face-name: SVG
+
+  foreignObject: SVG
+
+  g: SVG
+
+  glyph: SVG
+
+  glyphRef: SVG
+
+  hatch: SVG
+
+  hatchPath: SVG
+
+  hkern: SVG
+
+  iframe: SVG
+
+  image: SVG
+
+  line: SVG
+
+  linearGradient: SVG
+
+  marker: SVG
+
+  mask: SVG
+
+  meshGradient: SVG
+
+  meshPatch: SVG
+
+  meshRow: SVG
+
+  missing-glyph: SVG
+
+  path: SVG
+
+  pattern: SVG
+
+  polygon: SVG
+
+  polyline: SVG
+
+  radialGradient: SVG
+
+  rect: SVG
+
+  script: SVG
+
+  set: SVG
+
+  solidColor: SVG
+
+  source: SVG
+
+  stop: SVG
+
+  style: SVG
+
+  svg: SVG
+
+  switch: SVG
+
+  symbol: SVG
+
+  text: SVG
+
+  textPath: SVG
+
+  title: SVG
+
+  track: SVG
+
+  tref: SVG
+
+  tspan: SVG
+
+  use: SVG
+
+  video: SVG
+
+  view: SVG
+
+  vkern: SVG
+
