@@ -5,5 +5,7 @@ SOURCES = \
 	./src/attribute-values.yaml
 
 all:
-	node ./convertor/convert-yaml-to-ac-html.js --out ./html-stuff/ ${SOURCES}
+	node ./tools/convertor/convert-yaml-to-ac-html.js --out ./html-stuff/ ${SOURCES}
 
+setup:
+	(cd ./tools/convertor/ && npm install)

@@ -9,8 +9,8 @@ and located in `src/` directory. Edit them, but not `html-stuff/` files, they ar
 You should have nodejs installed in your system to make convertor work.
 
 ```bash
-# Install dependencies for convertor
-(cd convertor/ && npm install)
+# Install dependencies for convertor (node.js dependencies)
+make setup
 # Convert
 make
 ```
