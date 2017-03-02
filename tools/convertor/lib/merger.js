@@ -13,13 +13,14 @@ var T_ERROR = colors.red( '[ERROR]  '),
  * @param {Object} yamls[]
  * @param {String} yamls[].filename - filename of yaml file
  * @param {Object} yamls[].data - content of yaml file
- *
+ * @param {String} ignoreTagAtrr{} - Obj where keys is element-attribute that not cause warning
+ * 
  * @returns {Object} o
  * @returns {Object} o.tags - docs for tags
  * @returns {Object} o.attributes - docs for tag-attribute
  * @returns {Object} o.values - docs for attribute values
  */
-function mergeYamls(yamls) {
+function mergeYamls(yamls, ignoreTagAtrr) {
   var resAttributes = {},
       resTags = {},
       resValues = {};
@@ -59,7 +60,7 @@ function mergeYamls(yamls) {
     // funcs
 
     function processTagProps(doc, tagName) {
-      if (resTags[tagName]) {
+      if (resTags[tagName] && !ignoreTagAtrr[tagName]) {
         warning('Duplicate documentation for tag "' + colors.magenta(tagName) + '", overriding doc! Maybe you should place doc in one place?');
         console.log('Old documentation: ' + colors.red(resTags[tagName]));
         console.log('New documentation: ' + colors.green(doc));
@@ -112,7 +113,7 @@ function mergeYamls(yamls) {
           if (!resAttributes[tagName]) {
             resAttributes[tagName] = {};
           }
-          if (resAttributes[tagName][attributeName]) {
+          if (resAttributes[tagName][attributeName] && !ignoreTagAtrr[key]) {
             warning('Duplicate documentation for tag\'s attribute "' + colors.magenta(key) + '", overriding doc! Maybe you should place doc in one place?');
             console.log('Old documentation: ' + colors.red(resAttributes[tagName][attributeName]));
             console.log('New documentation: ' + colors.green(doc));

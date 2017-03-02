@@ -12,7 +12,7 @@ var mergeYamls = require('./lib/merger.js'),
 var MAX_DOC_SIZE = 250;         // Size of documentation. If greater than create separate doc file
 
 if (! argv._.length || !argv.out) {
-  console.log('Usage: build.js --out <dir> file1.yaml ...');
+  console.log('Usage: build.js [--ignore <filte>] --out <dir> file1.yaml ...');
   process.exit(0);
 }
 
@@ -21,10 +21,22 @@ var FILE_TAG_LIST = 'html-tag-list',
     DIR_ATTRIBUTES_VALUES = 'html-attributes-complete',
     DIR_ATTRIBUTES = 'html-attributes-list',
     DIR_ATTRIBUTES_LARGE_DOC = 'html-attributes-short-docs';
-    
+
 function main(argv) {
   var yamls = _.map(argv._, loadYAML);
-  var data = mergeYamls(yamls);
+
+  var ignoreTagAtrr = argv.ignore ? fs.readFileSync(argv.ignore, 'utf-8')
+        .split('\n')
+        .map(function(it) {
+          return it.replace(/^\s*/, '').replace(/\s*$/, '');
+        })
+        .reduce(function convertArrToHash(map, v) {
+          map[v] = true;
+          return map;
+        }, {})
+      : [];
+  var data = mergeYamls(yamls, ignoreTagAtrr);
+
 
   createStuffFiles(data, argv.out);
 
