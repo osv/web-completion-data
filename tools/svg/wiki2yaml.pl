@@ -75,13 +75,14 @@ EOS
     }
 
                 print <<EOS;
-
+docs:
+  svgdoc: &SVGDOC SVG element
 # SVG elements
 tags:
 EOS
 
     foreach my $el (sort keys %tags) {
-        print "  $el: \n\n";
+        print "  $el: *SVGDOC\n\n";
     }
 } else {
     warn "Could not open file '$filename' $!";

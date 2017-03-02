@@ -1141,11 +1141,12 @@ attributes:
       t: [ animate, animateMotion, animateTransform, set ]
       d: "<Clock-value> | indefinite (allows whitespace for the clockvalue)"
       v: [ indefinite ]
-
-# SVG elements
 docs:
   svgdoc: &SVGDOC SVG element
+# SVG elements
 tags:
+  a: *SVGDOC
+
   altGlyph: *SVGDOC
 
   altGlyphItem: *SVGDOC
