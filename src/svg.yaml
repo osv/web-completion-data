@@ -1143,176 +1143,178 @@ attributes:
       v: [ indefinite ]
 
 # SVG elements
+docs:
+  svgdoc: &SVGDOC SVG element
 tags:
-  altGlyph: SVG
+  altGlyph: *SVGDOC
 
-  altGlyphItem: SVG
+  altGlyphItem: *SVGDOC
 
-  animate: SVG
+  animate: *SVGDOC
 
-  animateMotion: SVG
+  animateMotion: *SVGDOC
 
-  animateTransform: SVG
+  animateTransform: *SVGDOC
 
-  audio: SVG
+  audio: *SVGDOC
 
-  canvas: SVG
+  canvas: *SVGDOC
 
-  circle: SVG
+  circle: *SVGDOC
 
-  clipPath: SVG
+  clipPath: *SVGDOC
 
-  cursor: SVG
+  cursor: *SVGDOC
 
-  defs: SVG
+  defs: *SVGDOC
 
-  desc: SVG
+  desc: *SVGDOC
 
-  discard: SVG
+  discard: *SVGDOC
 
-  eBlend: SVG
+  eBlend: *SVGDOC
 
-  ellipse: SVG
+  ellipse: *SVGDOC
 
-  feBlend: SVG
+  feBlend: *SVGDOC
 
-  feColorMatrix: SVG
+  feColorMatrix: *SVGDOC
 
-  feComponentTransfer: SVG
+  feComponentTransfer: *SVGDOC
 
-  feComposite: SVG
+  feComposite: *SVGDOC
 
-  feConvolveMatrix: SVG
+  feConvolveMatrix: *SVGDOC
 
-  feCustom: SVG
+  feCustom: *SVGDOC
 
-  feDiffuseLighting: SVG
+  feDiffuseLighting: *SVGDOC
 
-  feDisplacementMap: SVG
+  feDisplacementMap: *SVGDOC
 
-  feDistantLight: SVG
+  feDistantLight: *SVGDOC
 
-  feDropShadow: SVG
+  feDropShadow: *SVGDOC
 
-  feFlood: SVG
+  feFlood: *SVGDOC
 
-  feFuncA: SVG
+  feFuncA: *SVGDOC
 
-  feFuncB: SVG
+  feFuncB: *SVGDOC
 
-  feFuncG: SVG
+  feFuncG: *SVGDOC
 
-  feFuncR: SVG
+  feFuncR: *SVGDOC
 
-  feGaussianBlur: SVG
+  feGaussianBlur: *SVGDOC
 
-  feImage: SVG
+  feImage: *SVGDOC
 
-  feMerge: SVG
+  feMerge: *SVGDOC
 
-  feMorphology: SVG
+  feMorphology: *SVGDOC
 
-  feOffset: SVG
+  feOffset: *SVGDOC
 
-  fePointLight: SVG
+  fePointLight: *SVGDOC
 
-  feSpecularLighting: SVG
+  feSpecularLighting: *SVGDOC
 
-  feSpotLight: SVG
+  feSpotLight: *SVGDOC
 
-  feTile: SVG
+  feTile: *SVGDOC
 
-  feTurbulence: SVG
+  feTurbulence: *SVGDOC
 
-  filter: SVG
+  filter: *SVGDOC
 
-  font: SVG
+  font: *SVGDOC
 
-  font-face: SVG
+  font-face: *SVGDOC
 
-  font-face-name: SVG
+  font-face-name: *SVGDOC
 
-  foreignObject: SVG
+  foreignObject: *SVGDOC
 
-  g: SVG
+  g: *SVGDOC
 
-  glyph: SVG
+  glyph: *SVGDOC
 
-  glyphRef: SVG
+  glyphRef: *SVGDOC
 
-  hatch: SVG
+  hatch: *SVGDOC
 
-  hatchPath: SVG
+  hatchPath: *SVGDOC
 
-  hkern: SVG
+  hkern: *SVGDOC
 
-  iframe: SVG
+  iframe: *SVGDOC
 
-  image: SVG
+  image: *SVGDOC
 
-  line: SVG
+  line: *SVGDOC
 
-  linearGradient: SVG
+  linearGradient: *SVGDOC
 
-  marker: SVG
+  marker: *SVGDOC
 
-  mask: SVG
+  mask: *SVGDOC
 
-  meshGradient: SVG
+  meshGradient: *SVGDOC
 
-  meshPatch: SVG
+  meshPatch: *SVGDOC
 
-  meshRow: SVG
+  meshRow: *SVGDOC
 
-  missing-glyph: SVG
+  missing-glyph: *SVGDOC
 
-  path: SVG
+  path: *SVGDOC
 
-  pattern: SVG
+  pattern: *SVGDOC
 
-  polygon: SVG
+  polygon: *SVGDOC
 
-  polyline: SVG
+  polyline: *SVGDOC
 
-  radialGradient: SVG
+  radialGradient: *SVGDOC
 
-  rect: SVG
+  rect: *SVGDOC
 
-  script: SVG
+  script: *SVGDOC
 
-  set: SVG
+  set: *SVGDOC
 
-  solidColor: SVG
+  solidColor: *SVGDOC
 
-  source: SVG
+  source: *SVGDOC
 
-  stop: SVG
+  stop: *SVGDOC
 
-  style: SVG
+  style: *SVGDOC
 
-  svg: SVG
+  svg: *SVGDOC
 
-  switch: SVG
+  switch: *SVGDOC
 
-  symbol: SVG
+  symbol: *SVGDOC
 
-  text: SVG
+  text: *SVGDOC
 
-  textPath: SVG
+  textPath: *SVGDOC
 
-  title: SVG
+  title: *SVGDOC
 
-  track: SVG
+  track: *SVGDOC
 
-  tref: SVG
+  tref: *SVGDOC
 
-  tspan: SVG
+  tspan: *SVGDOC
 
-  use: SVG
+  use: *SVGDOC
 
-  video: SVG
+  video: *SVGDOC
 
-  view: SVG
+  view: *SVGDOC
 
-  vkern: SVG
+  vkern: *SVGDOC
 
