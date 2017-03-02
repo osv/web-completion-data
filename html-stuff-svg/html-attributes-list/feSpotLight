@@ -1,0 +1,8 @@
+limitingConeAngle <number>
+pointsAtX <number>
+pointsAtY <number>
+pointsAtZ <number>
+specularExponent <number>
+x <number>
+y <number>
+z <number>

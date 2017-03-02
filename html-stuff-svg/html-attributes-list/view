@@ -1,0 +1,6 @@
+preserveAspectRatio [defer] <align> [<meetOrSlice>]
+role [https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]
+tabindex <number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)
+viewBox a list of four numbers <min-x>, <min-y>, <width> and <height>, separated by whitespace and/or a comma
+viewTarget <XML-Name>
+zoomAndPan disable | magnify

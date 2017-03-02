@@ -1,0 +1,31 @@
+autoplay
+class whitespace separated list - HTML5 allows leading and trailing whitespace [http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#set-of-space-separated-tokens].
+controls
+crossorigin anonymous | use-credentials (Note, in html5 this is a [http://www.w3.org/TR/html5/infrastructure.html#cors-settings-attribute CORS settings attribute])
+height <length> | auto
+loop
+mediagroup [http://www.w3.org/TR/html5/dom.html#attribute-text Text]
+muted
+onclick [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onfocusin [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onfocusout [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onload [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmousedown [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmousemove [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseout [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseover [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseup [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+poster [http://www.w3.org/TR/html5/infrastructure.html#valid-non-empty-url-potentially-surrounded-by-spaces Valid non-empty URL potentially surrounded by spaces]
+preload none | metadata | auto
+preserveAspectRatio [defer] <align> [<meetOrSlice>]
+requiredExtensions list-of-extensions (whitespace separated IRIs)
+requiredFeatures list-of-features (whitespace separated feature strings)
+role [https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]
+src [http://www.w3.org/TR/html5/infrastructure.html#valid-non-empty-url-potentially-surrounded-by-spaces Valid non-empty URL potentially surrounded by spaces]
+style style (should reference [http://www.w3.org/TR/2013/REC-css-style-attr-20131107/ CSS Style Attributes] instead for the syntax definition, in any case CSS allows whitespace)
+systemLanguage a comma-separated list of language names as defined in BCP 47
+tabindex <number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)
+title [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>] (in html5: Text)
+width <length> | auto
+x <length>
+y <length> 

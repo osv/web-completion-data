@@ -1,0 +1,11 @@
+alphabetic <number>
+ascent <number>
+bbox <string>
+descent <number>
+hanging <number>
+ideographic <number>
+mathematical <number>
+slope <number>
+stemh <number>
+stemv <number>
+widths <string>

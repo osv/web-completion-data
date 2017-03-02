@@ -1,0 +1,19 @@
+attributeName <XMLName>
+attributeType CSS | XML | auto
+begin <begin-value-list> (allows whitespace in some but not all cases)
+dur <Clock-value> | media | indefinite (allows whitespace for the clockvalue)
+end <end-value-list> (allows whitespace in some but not all cases)
+fill freeze | remove
+max <Clock-value> | media (allows whitespace for the clockvalue)
+min <Clock-value> | media (allows whitespace for the clockvalue)
+onbegin [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onend [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onload [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onrepeat [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+repeatCount <number> | indefinite
+repeatDur <Clock-value> | indefinite (allows whitespace for the clockvalue)
+requiredExtensions list-of-extensions (whitespace separated IRIs)
+requiredFeatures list-of-features (whitespace separated feature strings)
+restart always | whenNotActive | never
+systemLanguage a comma-separated list of language names as defined in BCP 47
+to <value> (svg doesn't state that leading and trailing whitespace is ignored)

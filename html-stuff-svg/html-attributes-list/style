@@ -1,0 +1,3 @@
+media media (ISSUE: should be the same as for the source element, and the style element in html5) 
+title [https://svgwg.org/svg2-draft/styling.html#StyleElementTitleAttribute advisory-title] (in html5: Text)
+type content-type (in HTML5: [http://www.w3.org/TR/html5/infrastructure.html#valid-mime-type valid MIME type])

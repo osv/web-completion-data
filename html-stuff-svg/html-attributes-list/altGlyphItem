@@ -1,0 +1,2 @@
+role [https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]
+tabindex <number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)

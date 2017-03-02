@@ -1,0 +1,7 @@
+g1 <author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)
+g2 <author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)
+k <number>
+role [https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]
+tabindex <number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)
+u1 [<character> | <urange> ] [, [<character> | <urange>] ]*
+u2 [<character> | <urange> ] [, [<character> | <urange>] ]*
