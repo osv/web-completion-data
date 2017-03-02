@@ -53,8 +53,13 @@
   (expand-file-name "html-stuff" web-completion-data-package-dir)
   "The directory where basic completion source of `web-completion-data' exists.")
 
+(defconst web-completion-data-svg-source-dir
+  (expand-file-name "html-stuff-svg" web-completion-data-package-dir)
+  "The directory where SVG completion source of `web-completion-data' exists.")
+
 (defcustom web-completion-data-sources
-  '(("html" . web-completion-data-html-source-dir))
+  '(("html" . web-completion-data-html-source-dir)
+    ("SVG" . web-completion-data-svg-source-dir))
   "Alist of source directories. 
 car is source name, cdr is source location."
   :type 'alist)
