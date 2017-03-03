@@ -2,6 +2,11 @@
 # Source from https://www.w3.org/Graphics/SVG/WG/wiki/Proposals/AttributeWhitespace
 attributes:
 
+  - accent-height:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
   - alphabetic:
       t: [ font-face ]
       d: "<number>"
@@ -9,6 +14,21 @@ attributes:
 
   - amplitude:
       t: [ feFuncA, feFuncB, feFuncG, feFuncR ]
+      d: "<number>"
+      v: [  ]
+
+  - aria-valuemax:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "<number>"
+      v: [  ]
+
+  - aria-valuemin:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "<number>"
+      v: [  ]
+
+  - aria-valuenow:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
       d: "<number>"
       v: [  ]
 
@@ -29,6 +49,11 @@ attributes:
 
   - bias:
       t: [ feConvolveMatrix ]
+      d: "<number>"
+      v: [  ]
+
+  - cap-height:
+      t: [ font-face ]
       d: "<number>"
       v: [  ]
 
@@ -64,6 +89,21 @@ attributes:
 
   - hanging:
       t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - horiz-adv-x:
+      t: [ font, glyph, missing-glyph ]
+      d: "<number>"
+      v: [  ]
+
+  - horiz-origin-x:
+      t: [ font ]
+      d: "<number>"
+      v: [  ]
+
+  - horiz-origin-y:
+      t: [ font ]
       d: "<number>"
       v: [  ]
 
@@ -152,6 +192,16 @@ attributes:
       d: "<number-optional-number>"
       v: [  ]
 
+  - overline-position:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - overline-thickness:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
   - pathLength:
       t: [ path ]
       d: "<number>"
@@ -232,6 +282,16 @@ attributes:
       d: "<number>"
       v: [  ]
 
+  - strikethrough-position:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - strikethrough-thickness:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
   - surfaceScale:
       t: [ feDiffuseLighting, feSpecularLighting ]
       d: "<number>"
@@ -247,6 +307,41 @@ attributes:
       d: "<list-of-numbers>"
       v: [  ]
 
+  - underline-position:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - underline-thickness:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - units-per-em:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - v-alphabetic:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - v-hanging:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - v-ideographic:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
+  - v-mathematical:
+      t: [ font-face ]
+      d: "<number>"
+      v: [  ]
+
   - values:
       t: [ feColorMatrix ]
       d: "<list-of-numbers>"
@@ -257,6 +352,21 @@ attributes:
       d: "<number>"
       v: [  ]
 
+  - vert-adv-y:
+      t: [ font, glyph, missing-glyph ]
+      d: "<number>"
+      v: [  ]
+
+  - vert-origin-x:
+      t: [ font, glyph, missing-glyph ]
+      d: "<number>"
+      v: [  ]
+
+  - vert-origin-y:
+      t: [ font, glyph, missing-glyph ]
+      d: "<number>"
+      v: [  ]
+
   - viewBox:
       t: [ marker, pattern, svg, symbol, view ]
       d: "a list of four numbers <min-x>, <min-y>, <width> and <height>, separated by whitespace and/or a comma"
@@ -264,6 +374,11 @@ attributes:
 
   - x:
       t: [ fePointLight, feSpotLight, glyphRef ]
+      d: "<number>"
+      v: [  ]
+
+  - x-height:
+      t: [ font-face ]
       d: "<number>"
       v: [  ]
 
@@ -282,9 +397,29 @@ attributes:
       d: "<angle>"
       v: [  ]
 
+  - aria-level:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "integer"
+      v: [  ]
+
+  - aria-posinset:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "integer"
+      v: [  ]
+
+  - aria-setsize:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "integer"
+      v: [  ]
+
   - numOctaves:
       t: [ feTurbulence ]
       d: "<integer>"
+      v: [  ]
+
+  - panose-1:
+      t: [ font-face ]
+      d: "[<integer>]{10}"
       v: [  ]
 
   - targetX:
@@ -532,6 +667,116 @@ attributes:
       d: "replace | sum"
       v: [ replace, sum ]
 
+  - arabic-form:
+      t: [ glyph ]
+      d: "initial | medial | terminal | isolated"
+      v: [ initial, isolated, medial, terminal ]
+
+  - aria-atomic:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-autocomplete:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "inline | list | both | none"
+      v: [ both, inline, list, none ]
+
+  - aria-busy:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-checked:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | mixed | undefined"
+      v: [ false, mixed, true ]
+
+  - aria-disabled:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-dropeffect:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "copy | move | link | execute | popup | none"
+      v: [ copy, execute, link, move, none, popup ]
+
+  - aria-expanded:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | undefined"
+      v: [ false, true ]
+
+  - aria-grabbed:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | undefined"
+      v: [ false, true ]
+
+  - aria-haspopup:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-hidden:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-invalid:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | grammar | spelling"
+      v: [ false, grammar, spelling, true ]
+
+  - aria-live:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "off | polite | assertive"
+      v: [ assertive, off, polite ]
+
+  - aria-multiline:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-multiselectable:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-orientation:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "horizontal | vertical"
+      v: [ horizontal, vertical ]
+
+  - aria-pressed:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | mixed | undefined"
+      v: [ false, mixed, true ]
+
+  - aria-readonly:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-relevant:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "additions | removals | text | all"
+      v: [ additions, all, removals, text ]
+
+  - aria-required:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false"
+      v: [ false, true ]
+
+  - aria-selected:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "true | false | undefined"
+      v: [ false, true ]
+
+  - aria-sort:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "ascending | descending | none | other"
+      v: [ ascending, descending, none, other ]
+
   - attributeType:
       t: [ animate, animateTransform, set ]
       d: "CSS | XML | auto"
@@ -566,6 +811,26 @@ attributes:
       t: [ filter ]
       d: "userSpaceOnUse | objectBoundingBox"
       v: [ objectBoundingBox, userSpaceOnUse ]
+
+  - font-stretch:
+      t: [ font-face ]
+      d: "all | [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] [, [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] ]*"
+      v: [ condensed, expanded, extra-condensed, extra-expanded, normal, semi-condensed, semi-expanded, ultra-condensed, ultra-expanded ]
+
+  - font-style:
+      t: [ font-face ]
+      d: "all | [ normal | italic | oblique] [, [normal | italic | oblique]]*"
+      v: [ italic, normal, oblique ]
+
+  - font-variant:
+      t: [ font-face ]
+      d: "[normal | small-caps] [,[normal | small-caps]]*"
+      v: [ normal, small-caps ]
+
+  - font-weight:
+      t: [ font-face ]
+      d: "all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*"
+      v: [ 100, 200, 300, 400, 500, 600, 700, 800, 900, bold, normal ]
 
   - gradientUnits:
       t: [ linearGradient, meshGradient, radialGradient ]
@@ -665,8 +930,8 @@ attributes:
   - preserveAspectRatio:
       t: [ canvas, feImage, iframe, image, marker, pattern, svg, symbol, video, view ]
       d: "[defer] <align> [<meetOrSlice>]"
-      v: [  ]
-
+      v: [ none, xMinYMin, xMidYMin, xMaxYMin, xMinYMid, xMidYMid, xMaxYMid, xMinYMax, xMidYMax, xMaxYMax, meet, slice ]
+    
   - primitiveUnits:
       t: [ filter ]
       d: "userSpaceOnUse | objectBoundingBox"
@@ -772,6 +1037,46 @@ attributes:
       d: ""
       v: [  ]
 
+  - aria-activedescendant:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "ID"
+      v: [  ]
+
+  - aria-controls:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "list of whitespace separated IDs"
+      v: [  ]
+
+  - aria-describedby:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "list of whitespace separated IDs"
+      v: [  ]
+
+  - aria-flowto:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "list of whitespace separated IDs"
+      v: [  ]
+
+  - aria-labelledby:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "list of whitespace separated IDs"
+      v: [  ]
+
+  - aria-owns:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "list of whitespace separated IDs"
+      v: [  ]
+
+  - aria-label:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "string"
+      v: [  ]
+
+  - aria-valuetext:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "string"
+      v: [  ]
+
   - attributeName:
       t: [ animate, animateTransform, set ]
       d: "<XMLName>"
@@ -797,6 +1102,16 @@ attributes:
       d: "whitespace separated list - HTML5 allows leading and trailing whitespace [http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#set-of-space-separated-tokens]."
       v: [  ]
 
+  - font-family:
+      t: [ font-face ]
+      d: "<string>"
+      v: [  ]
+
+  - font-size:
+      t: [ font-face ]
+      d: "<string>"
+      v: [  ]
+
   - format:
       t: [ altGlyph, glyphRef ]
       d: "<string>"
@@ -813,6 +1128,11 @@ attributes:
       v: [  ]
 
   - g2:
+      t: [ hkern, vkern ]
+      d: "<author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)"
+      v: [  ]
+
+  - glyph-name:
       t: [ hkern, vkern ]
       d: "<author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)"
       v: [  ]
@@ -910,6 +1230,11 @@ attributes:
   - unicode:
       t: [ glyph ]
       d: "<string>"
+      v: [  ]
+
+  - unicode-range:
+      t: [ font-face ]
+      d: "<urange> [, <urange>]*"
       v: [  ]
 
   - values:
@@ -1045,6 +1370,11 @@ attributes:
   - media:
       t: [ style ]
       d: "media (ISSUE: should be the same as for the source element, and the style element in html5) "
+      v: [  ]
+
+  - aria-describedat:
+      t: [ a, altGlyph, altGlyphItem, audio, canvas, circle, cursor, discard, ellipse, foreignObject, g, hkern, iframe, image, line, path, polygon, polyline, rect, svg, switch, symbol, text, textPath, tref, tspan, use, video, view ]
+      d: "URI"
       v: [  ]
 
   - poster:

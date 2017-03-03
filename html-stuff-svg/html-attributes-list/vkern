@@ -1,5 +1,6 @@
 g1 <author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)
 g2 <author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)
+glyph-name <author-ident> [, <author-ident> ]* (Note, <author-ident> is undefined, and doesn't link to anywhere in the spec)
 k <number>
 u1 [<character> | <urange> ] [, [<character> | <urange>] ]*
 u2 [<character> | <urange> ] [, [<character> | <urange>] ]*

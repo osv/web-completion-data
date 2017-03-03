@@ -18,7 +18,7 @@ EOS
     while (my $row = <$fh>) {
         chomp $row;
         my ($attr, $elemsStr, $values) = $row =~m /^
-                                                   \|\s*(\w+)\s*
+                                                   \|\s*([\w-]+)\s*
                                                    \|\|\s*(.*?)\s*
                                                    \|\|\s*(.*)/x;
 
@@ -50,7 +50,8 @@ EOS
             if ($values =~m |<nowiki>(.*?)</nowiki>|) {
                 $sanitizedValues = $1;
             }
-
+            $sanitizedValues =~s/all\s*\|\s\[(.*?)\].*/$1/;
+            $sanitizedValues =~s/\[(.*?)\].*/$1/;
             foreach my $val (split /\|/, $sanitizedValues) {
                 $val =~s/^\s*//;
                 $val =~s/\s*$//;
@@ -58,6 +59,7 @@ EOS
                 next if $val =~m/</;
                 next if $val =~m/\(/;
                 next if $val =~m/\[/;
+                next if $val =~m/undefined/;
                 push @valuesArr, $val;
             }
 
