@@ -1,28 +1,6 @@
-video-crossorigin
-canvas-height
-iframe-height
-video-height
-track-kind
-track-label
-source-media
-style-media
-iframe-name
-video-poster
-audio-preload
-video-preload
-iframe-sandbox
-audio-src
-iframe-src
-source-src
-track-src
-video-src
-iframe-srcdoc
-track-srclang
-a-target
-style-title
-script-type
-source-type
-style-type
-canvas-width
-iframe-width
-video-width
+##################################
+# Each line - tag or tag-attribute that will be not warned if redefined in other yaml
+# Example:
+# video-crossorigin
+# canvas-height
+##################################
