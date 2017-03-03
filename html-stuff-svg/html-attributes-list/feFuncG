@@ -1,0 +1,7 @@
+amplitude <number>
+exponent <number>
+intercept <number>
+offset <number>
+slope <number>
+tableValues <list-of-numbers>
+type identity | table | discrete | linear | gamma

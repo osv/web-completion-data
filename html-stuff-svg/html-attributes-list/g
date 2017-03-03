@@ -1,0 +1,52 @@
+aria-activedescendant ID
+aria-atomic true | false
+aria-autocomplete inline | list | both | none
+aria-busy true | false
+aria-checked true | false | mixed | undefined
+aria-controls list of whitespace separated IDs
+aria-describedat URI
+aria-describedby list of whitespace separated IDs
+aria-disabled true | false
+aria-dropeffect copy | move | link | execute | popup | none
+aria-expanded true | false | undefined
+aria-flowto list of whitespace separated IDs
+aria-grabbed true | false | undefined
+aria-haspopup true | false
+aria-hidden true | false
+aria-invalid true | false | grammar | spelling
+aria-label string
+aria-labelledby list of whitespace separated IDs
+aria-level integer
+aria-live off | polite | assertive
+aria-multiline true | false
+aria-multiselectable true | false
+aria-orientation horizontal | vertical
+aria-owns list of whitespace separated IDs
+aria-posinset integer
+aria-pressed true | false | mixed | undefined
+aria-readonly true | false
+aria-relevant additions | removals | text | all
+aria-required true | false
+aria-selected true | false | undefined
+aria-setsize integer
+aria-sort ascending | descending | none | other
+aria-valuemax <number>
+aria-valuemin <number>
+aria-valuenow <number>
+aria-valuetext string
+class whitespace separated list - HTML5 allows leading and trailing whitespace [http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#set-of-space-separated-tokens].
+onclick [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onfocusin [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onfocusout [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onload [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmousedown [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmousemove [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseout [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseover [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onmouseup [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+requiredExtensions list-of-extensions (whitespace separated IRIs)
+requiredFeatures list-of-features (whitespace separated feature strings)
+role [https://svgwg.org/svg2-draft/struct.html#RoleAttribute white-space space separated tokens having values defined in Definition of Roles ([ARIA], section 5.4)]
+style style (should reference [http://www.w3.org/TR/2013/REC-css-style-attr-20131107/ CSS Style Attributes] instead for the syntax definition, in any case CSS allows whitespace)
+systemLanguage a comma-separated list of language names as defined in BCP 47
+tabindex <number> (ISSUE: should be <integer>, html5: [http://www.w3.org/TR/html5/infrastructure.html#valid-integer valid integer] strips leading and trailing WS)

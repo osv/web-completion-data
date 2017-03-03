@@ -1,0 +1,8 @@
+class whitespace separated list - HTML5 allows leading and trailing whitespace [http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#set-of-space-separated-tokens].
+height <length>
+in SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <filter-primitive-reference> (mix of enumerated and string)
+result <filter-primitive-reference> (unclear if leading & trailing whitespace is stripped or not)
+style style (should reference [http://www.w3.org/TR/2013/REC-css-style-attr-20131107/ CSS Style Attributes] instead for the syntax definition, in any case CSS allows whitespace)
+width <length>
+x <coordinate>
+y <coordinate>

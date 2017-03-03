@@ -1,0 +1,29 @@
+accumulate none | sum
+additive replace | sum
+begin <begin-value-list> (allows whitespace in some but not all cases)
+by [http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)
+calcMode discrete | linear | paced | spline
+dur <Clock-value> | media | indefinite (allows whitespace for the clockvalue)
+end <end-value-list> (allows whitespace in some but not all cases)
+fill freeze | remove
+from [http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)
+keyPoints <list-of-numbers>
+keySplines <list> (doesn't say of what except in prose, but are 4 control points per spline, so essentially <list-of-number>)
+keyTimes <list> (essentially <list-of-number> with additional restrictions on the number of items in the list and the number range)
+max <Clock-value> | media (allows whitespace for the clockvalue)
+min <Clock-value> | media (allows whitespace for the clockvalue)
+onbegin [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onend [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onload [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+onrepeat [https://svgwg.org/svg2-draft/types.html#DataTypeAnything <anything>]
+origin default (the attribute "has no effect in SVG" according to spec, do we need to keep it at all?)
+path <path-data>
+repeatCount <number> | indefinite
+repeatDur <Clock-value> | indefinite (allows whitespace for the clockvalue)
+requiredExtensions list-of-extensions (whitespace separated IRIs)
+requiredFeatures list-of-features (whitespace separated feature strings)
+restart always | whenNotActive | never
+rotate <number> | auto | auto-reverse
+systemLanguage a comma-separated list of language names as defined in BCP 47
+to [http://www.w3.org/TR/2001/REC-smil-animation-20010904/#FromAttribute <value>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)
+values [http://www.w3.org/TR/2001/REC-smil-animation-20010904/#ValuesAttribute <list>] (defined in SMIL, strips leading and trailing whitespace, value should be parsed in the context it's used in)

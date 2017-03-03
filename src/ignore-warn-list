@@ -1,0 +1,6 @@
+##################################
+# Each line - tag or tag-attribute that will be not warned if redefined in other yaml
+# Example:
+# video-crossorigin
+# canvas-height
+##################################

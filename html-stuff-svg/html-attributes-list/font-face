@@ -1,0 +1,33 @@
+accent-height <number>
+alphabetic <number>
+ascent <number>
+bbox <string>
+cap-height <number>
+descent <number>
+font-family <string>
+font-size <string>
+font-stretch
+font-style all | [ normal | italic | oblique] [, [normal | italic | oblique]]*
+font-variant [normal | small-caps] [,[normal | small-caps]]*
+font-weight all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*
+hanging <number>
+ideographic <number>
+mathematical <number>
+overline-position <number>
+overline-thickness <number>
+panose-1 [<integer>]{10}
+slope <number>
+stemh <number>
+stemv <number>
+strikethrough-position <number>
+strikethrough-thickness <number>
+underline-position <number>
+underline-thickness <number>
+unicode-range <urange> [, <urange>]*
+units-per-em <number>
+v-alphabetic <number>
+v-hanging <number>
+v-ideographic <number>
+v-mathematical <number>
+widths <string>
+x-height <number>

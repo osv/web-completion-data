@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015 Zhang Kai Yu, Olexandr Sydorchuk
 
 ;; Author: Olexandr Sydorchuk <olexandr.syd@gmail.com>
-;; Version: 0.2
+;; Version: 0.3
 ;; Keywords: html, auto-complete, company
 ;; URL: https://github.com/osv/web-completion-data
 
@@ -24,7 +24,7 @@
 
 ;; This is just dependency for ac-html, company-web
 ;;
-;; `web-completion-data-sources' is pair list of framework-name and directory of completion data
+;; `web-completion-data-sources' is pair list of complation-name and directory of completion data
 ;;
 ;; This package provide default "html" completion data.
 ;;
@@ -53,8 +53,13 @@
   (expand-file-name "html-stuff" web-completion-data-package-dir)
   "The directory where basic completion source of `web-completion-data' exists.")
 
+(defconst web-completion-data-svg-source-dir
+  (expand-file-name "html-stuff-svg" web-completion-data-package-dir)
+  "The directory where SVG completion source of `web-completion-data' exists.")
+
 (defcustom web-completion-data-sources
-  '(("html" . web-completion-data-html-source-dir))
+  '(("html" . web-completion-data-html-source-dir)
+    ("SVG" . web-completion-data-svg-source-dir))
   "Alist of source directories. 
 car is source name, cdr is source location."
   :type 'alist)
